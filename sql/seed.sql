@@ -3,7 +3,7 @@
 INSERT INTO users (username, password_hash, role, voter_id, is_voter_id_valid, public_key, private_key) VALUES
 (
 'admin',
-'secureAdminPassword123',
+'Lt8tJjCMr1n/WdMTu/dyPUOoLB6Gzf9LvEe/NHUXV76RRacenXvxQKvgS+HQTX5a', -- password = secureAdminPassword123
 'ADMIN',
 'ADMIN-001',
 true,
@@ -12,9 +12,9 @@ true,
 );
 -- Insert Regular Test Users
 INSERT INTO users (username, password_hash, role, voter_id, is_voter_id_valid, public_key, private_key) VALUES
-('voter1', 'voter1Password', 'USER', 'VOTER-001', true, 'PUBLIC_KEY_1', 'PRIVATE_KEY_1'),
-('voter2', 'voter2Password', 'USER', 'VOTER-002', true, 'PUBLIC_KEY_2', 'PRIVATE_KEY_2'),
-('voter3', 'voter3Password', 'USER', 'VOTER-003', true, 'PUBLIC_KEY_3', 'PRIVATE_KEY_3');
+('voter1', 'se5mjAn6mSZW/q94TWPgv8fs9jG2z+3wec3EFyFi9vtcqs54is5yLus+VQr/RphY', 'USER', 'VOTER-001', true, 'PUBLIC_KEY_1', 'PRIVATE_KEY_1'), -- password = voter1Password
+('voter2', 'aoI4E+ZRfzolpieXlghAIzfsFw4IuxMtCGxcDBY6S6DNum7L4G9KTop0L5NAPeV0', 'USER', 'VOTER-002', true, 'PUBLIC_KEY_2', 'PRIVATE_KEY_2'), -- password = voter2Password
+('voter3', 'krbESGWdJllubeFoc5XLCemYKU0DfURrjJJZ5PEOKtpfPYm4K6WUTsx3/rBR4hpu', 'USER', 'VOTER-003', true, 'PUBLIC_KEY_3', 'PRIVATE_KEY_3'); -- password = voter3Password
 -- Create Test Elections
 INSERT INTO elections (title, start_date, end_date, created_by) VALUES
 ('Presidential Election 2024', '2024-01-01 00:00:00', '2024-12-31 23:59:59', 1),
